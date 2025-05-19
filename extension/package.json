@@ -1,0 +1,30 @@
+{
+    "name": "youtube-shorts-blocker",
+    "version": "1.0.0",
+    "description": "Chrome extension to help manage short-form content addiction by redirecting away from YouTube Shorts",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build && node copy-manifest.js",
+      "preview": "vite preview"
+    },
+    "keywords": [
+      "youtube",
+      "shorts",
+      "blocker",
+      "extension",
+      "digital-wellbeing"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.25",
+      "@types/react-dom": "^18.2.11",
+      "@vitejs/plugin-react": "^4.2.0",
+      "vite": "^5.0.0"
+    }
+  }

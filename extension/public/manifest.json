@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "NoShorts",
+    "version": "1.0.0",
+    "description": "Helps manage short-form content addiction by redirecting away from YouTube Shorts",
+    "permissions": ["storage", "tabs", "webNavigation"],
+    "host_permissions": ["*://*.youtube.com/*"],
+    "background": {
+      "service_worker": "assets/background.js",
+      "type": "module"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["assets/content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "src/popup/index.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
