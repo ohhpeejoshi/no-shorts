@@ -17,7 +17,13 @@
 git clone https://github.com/ohhpeejoshi/no-shorts.git
 ```
 
-2. Install dependencies(Make sure you have Node.js installed):
+2.Switch to the project folder:
+
+```bash
+cd no-shorts/extension
+```
+
+3. Install dependencies(Make sure you have Node.js installed):
 
 ```bash
 npm install
@@ -33,7 +39,7 @@ This will generate the final extension code inside the dist/ folder.
 
 To load the extension in Chrome:
 
-- Open Chrome and navigate to chrome://extensions/
+- Open Chrome and navigate to chrome://extensions/ (or click on three dots on top right corner, go to Extensions -> Manage Extensions).
 
 - Enable Developer mode (toggle in the top-right)
 

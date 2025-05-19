@@ -19,17 +19,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
 });
 
-// This script can be expanded to:
-// 1. Hide shorts from recommendations
-// 2. Add visual indicators
-// 3. Implement additional site-specific logic
-
 // Watch for DOM changes to hide shorts from recommendations if needed
 const observer = new MutationObserver((mutations) => {
     if (!isEnabled) return;
 
-    // Example: Hide shorts in recommendations
-    // This is optional but provides additional protection
+    //Hide shorts in recommendations
     const shortsThumbnails = document.querySelectorAll('a[href^="/shorts"]');
     shortsThumbnails.forEach((thumbnail) => {
         // Find the closest container element (this depends on YouTube's structure)
